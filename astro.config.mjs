@@ -7,7 +7,7 @@ import themeRosePineDawn from "/src/rose-pine-dawn-color-theme.json";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.anerivs.github.io",
+  site: 'https://anerivs.github.io/',
   integrations: [
     mdx({
       syntaxHighlight: "shiki",
