@@ -2,9 +2,9 @@ import rss from "@astrojs/rss";
 
 export const get = () =>
   rss({
-    title: "Matthew Tao",
+    title: "Aneri Shah",
     description:
-      "Matthew Tao is an Auckland based front-end developer who focuses on the little things that make a website delightful.",
+      "Aneri Shah is an aspiring software engineering with a focus in quantum computing, low-level programming, and AI/ML engineering.",
     site: import.meta.env.SITE,
     items: import.meta.glob("./blog/**/*.{md,mdx}"),
   });

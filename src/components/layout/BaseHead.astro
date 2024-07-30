@@ -12,7 +12,7 @@ export interface Props {
 }
 
 const defaultDescription =
-  "Matthew Tao is an Auckland based front-end developer who focuses on the little things that make a website delightful.";
+  "Aneri Shah is an aspiring software engineering with a focus in quantum computing, low-level programming, and AI/ML engineering.";
 const ogImage = "/social.jpg";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
@@ -55,11 +55,6 @@ const { title, description, image, publishedTime, modifiedTime } = Astro.props;
       height: image ? null : "630",
       alt: title || "Aneri Shah",
     },
-  }}
-  twitter={{
-    card: "summary_large_image",
-    site: "@MatthewTao5",
-    creator: "@MatthewTao5",
   }}
 />
 <ViewTransitions />
