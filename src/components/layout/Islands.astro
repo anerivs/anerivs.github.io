@@ -1,0 +1,28 @@
+---
+export interface IslandProps {
+  title: string;
+  image: string[];
+  description: string;
+  date: string;
+}
+
+const { title, image, description } = Astro.props;
+---
+
+<div class="island bg-bg-navy p-4 rounded-md shadow-lg mb-4">
+  <div class="flex justify-between items-center mb-2">
+    <h2 class="text-white">{title}</h2>
+  </div>
+  <div class="image-carousel relative">
+    {image && image.length > 0 && (
+      <img src={image[0]} alt={title} class="rounded-md w-full object-cover" />
+    )}
+    {image && image.length > 1 && (
+      <>
+        <button class="absolute left-0 top-1/2 transform -translate-y-1/2">‹</button>
+        <button class="absolute right-0 top-1/2 transform -translate-y-1/2">›</button>
+      </>
+    )}
+  </div>
+  <p class="text-b-graytext mt-2">{description}</p>
+</div>

@@ -1,46 +1,44 @@
 ---
-import FormattedDate from "../components/FormattedDate.astro";
+import Island from "../components/layout/Islands.astro";
 import BaseHead from "../components/layout/BaseHead.astro";
-import ExpandedContact from "../components/layout/ExpandedContact.astro";
-import FibbonaciHeading from "../components/layout/FibbonaciHeading.astro";
 import Header from "../components/layout/Header.astro";
-
 import { projects } from "../data/projects/projects.json";
+import FibbonaciHeading from "../components/layout/FibbonaciHeading.astro";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <BaseHead
-      title="Projects"
-      description="Some of Aneri's proudest works."
+      title="Visuals"
+      description="Here's some of Aneri's visual creations!"
     />
   </head>
   <body class="mx-gutter overflow-x-hidden bg-bg-black">
-
     <Header />
-    <main
-      class="flex gap-12 xl:gap-24 flex-wrap md:flex-nowrap justify-center md:justify-start mb-20"
-    >
-      <FibbonaciHeading title="Projects" />
-      <section class="w-[42ch] mt-2">
-        <ul class="flex flex-col gap-12">
-          {
-            projects.map(({ title, image, date, description }) => (
-              <div class="flex flex-col gap-5">
-                <div class="flex justify-between leading-[0.95]">
-                  <h2>{title}</h2>
-                  <FormattedDate dateString={date} class="text-b-minato" />
-                </div>
-
-                <img src={image} alt="" class="aspect-video object-cover" />
-
-                <p>{description}</p>
-              </div>
-            ))
-          }
-        </ul>
+    <main class="flex flex-wrap md:flex-nowrap justify-center md:justify-start mb-20">
+      <section class="w-full md:w-1/3 p-4">
+        <FibbonaciHeading title="Visuals" desc="Some creations made in Aneri's (limited) free time"/>
+      </section>
+      <section class="masonry-layout w-full md:w-2/3">
+        {
+          projects.map(project => (
+            <Island {...project} />
+          ))
+        }
       </section>
     </main>
   </body>
 </html>
+
+<style>
+.masonry-layout {
+  column-count: 3;
+  column-gap: 1rem; /* Increase column gap */
+}
+
+.masonry-layout > div {
+  break-inside: avoid;
+  margin-bottom: 2rem; /* Increase bottom margin */
+}
+</style>

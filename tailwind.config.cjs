@@ -29,7 +29,7 @@ module.exports = {
         "b-willow": "#c8d5bb",
         "b-yellow": "#C2882F",
         "b-graytext": "#91A0AB",
-        "bg-navy": "#20638c",
+        "bg-navy": "#194D6E",
         "bg-blue": "#3498bf",
         "bg-yellow": "#d99a25",
         "bg-black": "#133B53", 
