@@ -12,6 +12,7 @@ const { title, image, description } = Astro.props;
 <div class="island bg-bg-navy p-4 rounded-md shadow-lg mb-4">
   <div class="flex justify-between items-center mb-2">
     <h2 class="text-white">{title}</h2>
+    <!-- <FormattedDate dateString={date} class="text-b-graytext" /> -->
   </div>
   <div class="image-carousel relative">
     {image && image.length > 0 && (

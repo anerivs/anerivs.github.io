@@ -1,40 +1,40 @@
 {
   "projects": [
     {
-      "title": "Environ",
-      "description": "An app that utilises AI to encourage recycling.",
+      "title": "Barcelona Cathedral",
+      "description": "Barcelona, Spain.",
       "date": "2023-06-29T12:00:00.000Z",
-      "image": ["/uploads/environ.webp"]
+      "image": ["/visuals/cathedral.jpg"]
     },
     {
-      "title": "blogg",
-      "description": "A blog that I made to learn more about developing Flutter apps.",
+      "title": "Parc de la Ciutadella",
+      "description": "Barcelona, Spain.",
       "date": "2023-06-29T12:00:00.000Z",
-      "image": ["/uploads/blogg.webp"]
+      "image": ["/visuals/ciutadella.jpg"]
     },
     {
-      "title": "Gif Creator",
-      "description": "A simple web app that allows you to create meme gifs from images or videos.",
+      "title": "Cliffs",
+      "description": "Corfu, Greece.",
       "date": "2023-06-29T12:00:00.000Z",
-      "image": ["/uploads/gif.webp"]
+      "image": ["/visuals/corfu.jpg"]
     },
     {
-        "title": "empty4",
-        "description": "test test test test test",
+        "title": "Casa Vicens",
+        "description": "Barcelona, Spain.",
         "date": "2023-06-29T12:00:00.000Z",
-        "image": ["/uploads/blogg.webp"]
+        "image": ["/visuals/gaudi.JPG"]
     },
     {
-        "title": "empty4",
-        "description": "test test test test test",
+        "title": "Plaza de Espana",
+        "description": "Barcelona, Spain.",
         "date": "2023-06-29T12:00:00.000Z",
-        "image": ["/uploads/blogg.webp"]
+        "image": ["/visuals/plaza.jpg"]
     },
     {
-        "title": "empty4",
-        "description": "test test test test test",
+        "title": "Plaza de Espana",
+        "description": "Barcelona, Spain.",
         "date": "2023-06-29T12:00:00.000Z",
-        "image": ["/uploads/blogg.webp"]
+        "image": ["/visuals/plaza.jpg"]
     }
   ]
 }
