@@ -1,14 +1,13 @@
 ---
-title: Learn currying by looking at Rambda's source code
+title: Coming Soon... How I made this website!
 description: >-
-  Let's walk through Rambda's curry function to gain a deeper understanding of
-  how to implement currying in JavaScript.
-pubDate: 2022-02-15T11:00:00.000Z
-lastEdit: 2022-02-15T11:00:00.000Z
-heroImage: /uploads/dGwDhpRTrDNd3gFybvTvQy;303x117.jpeg
+  I've recorded documentation on how I customized an existing website template, and what I've learned along the way.
+pubDate: 2024-08-13T11:00:00.000Z
+lastEdit: 2024-08-13T11:00:00.000Z
+heroImage: /visuals/cliffs2.jpg
 layout: ../../../layouts/BlogPost.astro
 ---
-
+<!-- 
 ## What is currying and how do I use it?
 
 Currying a function is a technique where it transforms a function into one that expects its arguments one at a time. If that sounds like a word salad to you, don't worry, it's easier to understand if I show you an example. Imagine you have a function `add` that takes two arguments and simply adds them together. Here's how the function calls differ.
@@ -159,4 +158,4 @@ function ([2, 3]) {
 const total = 5 // Yay!
 ```
 
-Note that if `add` accepted more than two arguments, then it would've called `curry` again with `rest` as the parameter. Eventually the `javascript±rest.length >= add.length` would evaluate to true, and the function will be called.
+Note that if `add` accepted more than two arguments, then it would've called `curry` again with `rest` as the parameter. Eventually the `javascript±rest.length >= add.length` would evaluate to true, and the function will be called. -->
